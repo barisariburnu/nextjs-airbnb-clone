@@ -64,13 +64,13 @@ export default function Home({ exploreData, cardsData }) {
 export async function getStaticProps() {
     const exploreData = await fetch("https://links.papareact.com/pyp").then(
         (res) => {
-            res.json();
+            return res.json();
         }
     );
 
     const cardsData = await fetch("https://links.papareact.com/zp1").then(
         (res) => {
-            res.json();
+            return res.json();
         }
     );
 
