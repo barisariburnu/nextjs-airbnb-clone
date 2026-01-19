@@ -1,9 +1,12 @@
 module.exports = {
     images: {
-        domains: ["links.papareact.com", "upload.wikimedia.org"]
+        domains: [
+            "links.papareact.com",
+            "upload.wikimedia.org",
+            "a0.muscache.com",
+        ],
+        unoptimized: true,
     },
-    env: {
-        mapbox_key:
-            "pk.eyJ1IjoiYmFyaXNhcmlidXJudSIsImEiOiJjaXQ5eG9rbHIwMDNsMnlwaDdoYzgyOW9vIn0.ds_j1qVWujprWMC5auOazg"
-    }
+    output: "export",
 };
+

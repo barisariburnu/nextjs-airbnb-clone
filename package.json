@@ -1,5 +1,9 @@
 {
-  "private": true,
+  "name": "nextjs-airbnb-clone",
+  "version": "1.0.0",
+  "description": "A high-performance Airbnb clone built with Next.js and Tailwind CSS.",
+  "license": "MIT",
+  "author": "Barış Arıburnu",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

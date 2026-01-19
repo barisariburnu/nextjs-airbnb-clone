@@ -1,29 +1,68 @@
-# Next.js + Tailwind CSS Example
+# Airbnb Clone 🏠
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v2.2)](https://blog.tailwindcss.com/tailwindcss-2-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+A high-performance, responsive Airbnb clone built with **Next.js**, **Tailwind CSS**, and **Mapbox**.
 
-It uses the new [`Just-in-Time Mode`](https://tailwindcss.com/docs/just-in-time-mode) for Tailwind CSS.
+![Project Preview](https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/2560px-Airbnb_Logo_B%C3%A9lo.svg.png)
 
-## Preview
+## 🚀 Features
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+- **SSR & SSG**: Utilizing Next.js for optimal performance and SEO.
+- **Tailwind CSS**: A fully responsive and modern UI.
+- **Mapbox Integration**: Interactive map results for search queries.
+- **Date Range Picker**: Intuitive date selection for booking.
+- **Live Search**: Robust search functionality with location and guest count.
+- **Custom Components**: Reusable UI components including `SmallCard`, `MediumCard`, `LargeCard`, and `InfoCard`.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+## 🛠️ Tech Stack
 
-## Deploy your own
+- **Framework**: [Next.js](https://nextjs.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Map**: [Mapbox](https://www.mapbox.com/)
+- **Icons**: [Heroicons](https://heroicons.com/)
+- **Date Picking**: [React Date Range](https://github.com/hypeserver/react-date-range)
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+## ⚙️ Installation
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/barisariburnu/nextjs-airbnb-clone.git
+   cd nextjs-airbnb-clone
+   ```
 
-## How to use
+2. **Install dependencies:**
+   ```bash
+   bun install
+   # or
+   npm install
+   ```
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+3. **Set up Environment Variables:**
+   Create a `.env.local` file in the root directory and add your Mapbox key.
+   ```env
+   NEXT_PUBLIC_MAPBOX_KEY=your_mapbox_api_token
+   ```
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
+4. **Run the development server:**
+   ```bash
+   bun run dev
+   # or
+   npm run dev
+   ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+5. **Open the browser:**
+   Navigate to `http://localhost:3000` to see the result.
+
+## 📁 Project Structure
+
+- `components/`: Pure UI components.
+- `pages/`: Next.js pages and routing.
+- `public/`: Static assets.
+- `styles/`: Global styles and Tailwind configuration.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
