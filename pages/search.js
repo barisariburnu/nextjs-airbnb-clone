@@ -11,9 +11,9 @@ function Search({ searchResults }) {
 
     const { location, startDate, endDate, noOfGuests } = router.query;
 
-    const formattedStartDate = format(new Date(startDate), "dd MMMM yy");
-    const formattedEndDate = format(new Date(endDate), "dd MMMM yy");
-    const range = `${formattedStartDate} - ${formattedEndDate}`;
+    const formattedStartDate = startDate ? format(new Date(startDate), "dd MMMM yy") : "";
+    const formattedEndDate = endDate ? format(new Date(endDate), "dd MMMM yy") : "";
+    const range = (startDate && endDate) ? `${formattedStartDate} - ${formattedEndDate}` : "";
 
     return (
         <div>
@@ -74,7 +74,7 @@ function Search({ searchResults }) {
 
 export default Search;
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
     const searchResults = await fetch("https://jsonkeeper.com/b/5NPS").then(
         (res) => res.json()
     );
