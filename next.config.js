@@ -8,5 +8,7 @@ module.exports = {
         unoptimized: true,
     },
     output: "export",
+    basePath: "/nextjs-airbnb-clone",
+    assetPrefix: "/nextjs-airbnb-clone",
 };
 
